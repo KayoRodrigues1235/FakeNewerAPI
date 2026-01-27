@@ -1,6 +1,7 @@
 # FakeNewerAPI
 
-[! IMPORTANT] Essa aplicação tem foco totalmente para fins de estudo e portfolio! Não é um portal de noticias veridico.
+>[!IMPORTANT]
+>Essa aplicação tem foco totalmente para fins de estudo e portfolio! Não é um portal de noticias veridico.
 
 <div align="left">
  <img src="https://img.shields.io/badge/status-em desenvolvimento-green"></img>
