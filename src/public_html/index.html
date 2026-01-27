@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Newer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="resource/svg/Favicon.svg" type="favicon/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto+Slab:wght@300;400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <i class="fas fa-newspaper"></i>
+                <h1>Seu site de notícias Inúteis e pouco confiaveis</h1>
+            </div>
+            <p class="subtitle">As notícias mais irrelevantes do universo, fresquinhas do seu dia!</p>
+        </header>
+
+        <div class="controls">
+            <div class="search-filter">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchInput" placeholder="Buscar notícias...">
+                </div>
+                <div class="filter-box">
+                    <label for="categoryFilter"><i class="fas fa-filter"></i> Filtrar por categoria:</label>
+                    <select id="categoryFilter">
+                        <option value="todas">Todas as categorias</option>
+                        <option value="comingSoon">em breve...</option>
+                    </select>
+                </div>
+            </div>
+            <div class="actions">
+                <button id="refreshBtn" class="btn-primary">
+                    <i class="fas fa-sync-alt"></i> Atualizar Notícias
+                </button>
+                <button id="randomBtn" class="btn-secondary">
+                    <i class="fas fa-random"></i> Notícia Aleatória
+                </button>
+            </div>
+        </div>
+
+        <div class="stats">
+            <div class="stat-card">
+                <i class="fas fa-file-alt"></i>
+                <div>
+                    <h3>Total de Notícias</h3>
+                    <p id="totalNews">0</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-tags"></i>
+                <div>
+                    <h3>Categorias</h3>
+                    <p id="totalCategories">0</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-calendar-alt"></i>
+                <div>
+                    <h3>Notícias Hoje</h3>
+                    <p id="todayNews">0</p>
+                </div>
+            </div>
+        </div>
+
+        <main class="news-container">
+            <div class="loading" id="loading">
+                <div class="spinner"></div>
+                <p>Carregando notícias inúteis...</p>
+            </div>
+            <div class="news-grid" id="newsGrid">
+
+            </div>
+        </main>
+
+        <div class="notification" id="notification">
+            <span id="notificationText"></span>
+            <button onclick="hideNotification()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <footer class="footer">
+            <p>API de Notícias Inúteis &copy; <span id="currentYear"></span> - Meio obvio mas nao confie em nada desse web site</p>
+            <p class="api-info">
+                <i class="fas fa-code"></i>Desenvolvido com Node.js
+            </p>
+        </footer>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

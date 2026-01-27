@@ -1,0 +1,14 @@
+{
+  "name": "fakingnews",
+  "version": "1.0.0",
+  "description": "api to fake news",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "author": "KayoTheDev",
+  "license": "GPL-3.0-only",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
