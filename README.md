@@ -1,0 +1,2 @@
+# FakeNewerAPI
+Espalhando fakenews??
