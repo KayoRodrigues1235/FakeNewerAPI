@@ -5,7 +5,7 @@
 
 
 <div align="left">
- <img src="https://img.shields.io/badge/status-em desenvolvimento-green"></img>
+ <img src="https://img.shields.io/badge/status-Arquivado-orange"></img>
 </div>
 
 
